@@ -1,5 +1,4 @@
 package com.bl;
-import java.util.*;
 
 public class PersonalDetails {
 	private String firstName;
@@ -11,42 +10,58 @@ public class PersonalDetails {
     private String phoneNo;
     private String email;
 	
-    Scanner scanObj = new Scanner(System.in);
-
-	public void getFirstName(){
-		System.out.println("Enter First Name");
-		 firstName = scanObj.nextLine();
+    public String getFirstName() {
+		return firstName;
 	}
-	public void getLastName() {
-		System.out.println("Enter Last Name");
-		 lastName = scanObj.nextLine();
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
-	public void getAddress() {
-		System.out.println("Enter your Address");
-		address  = scanObj.nextLine();
+	public String getLastName() {
+		return lastName;
 	}
-	public void getStateName() {
-		System.out.println("Enter Your State");
-		 state = scanObj.nextLine();
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
-	public void getPhoneNumber() {
-		System.out.println("Enter the Phone Number");
-		 phoneNo = scanObj.nextLine();	
+	public String getAddress() {
+		return address;
 	}
-	public void getEmail() {
-		System.out.println("Enter the Email ");
-		 email = scanObj.nextLine();	
+	public void setAddress(String address) {
+		this.address = address;
 	}
-	 public void getZipCode() { System.out.println("Enter Your Zip Code"); 
-	 zipCode = scanObj.nextLine();
-	} 
-	
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getZipCode() {
+		return zipCode;
+	}
+	public void setZipCode(String zipCode) {
+		this.zipCode = zipCode;
+	}
+	public String getPhoneNo() {
+		return phoneNo;
+	}
+	public void setPhoneNo(String phoneNo) {
+		this.phoneNo = phoneNo;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	@Override
 	public String toString() {
 		return "PersonalDetails [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city="
 				+ city + ", state=" + state + ", zipCode=" + zipCode + ", phoneNo=" + phoneNo + ", email=" + email
-				+ ", scanObj=" + scanObj + "]";
+				+ "]";
 	}
-    
-    
 }
