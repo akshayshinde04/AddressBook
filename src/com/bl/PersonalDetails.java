@@ -1,7 +1,7 @@
 package com.bl;
 
 public class PersonalDetails {
-	private String firstName;
+    private String firstName;
     private String lastName;
     private String address;
     private String city;
