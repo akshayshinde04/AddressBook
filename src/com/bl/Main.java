@@ -9,7 +9,7 @@ public class Main {
 	static int menu;
 	public static int choice() {
 		System.out.println(" 0. Exit. ");
-		System.out.println(" 1. Edit contact. ");
+		System.out.println(" 1. Delete contact. ");
 		menu = scanner.nextInt();
 		return menu;
 	}
@@ -22,8 +22,7 @@ public class Main {
 			switch (menu) {
 			
 			case 1:
-				System.out.println("Enter First Name of contact which you would like to edit: ");
-				addPersonDetail.editContact(contact);
+				addPersonDetail.deleteContact(contact);
 				break;
 
 			default:

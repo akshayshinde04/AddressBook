@@ -6,7 +6,7 @@ public class AddDetails {
 	Scanner scanDetails = new Scanner(System.in);
 	ArrayList<PersonalDetails> contactDetails = new ArrayList<PersonalDetails>();
 	
-	public void editContact(ArrayList<PersonalDetails> contactDetails) {
+	public void deleteContact(ArrayList<PersonalDetails> contactDetails) {
 		String data = scanDetails.nextLine();
 		int index = contactDetails.indexOf(data);
 		System.out.println(contactDetails.size());
@@ -74,6 +74,5 @@ public class AddDetails {
 			}
 		}
 	}
-	
 }
 
